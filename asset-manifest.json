@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/homework-react-25/static/css/main.f855e6bc.css",
-    "main.js": "/homework-react-25/static/js/main.19f38d4f.js",
+    "main.js": "/homework-react-25/static/js/main.19046105.js",
     "static/js/642.670eb97d.chunk.js": "/homework-react-25/static/js/642.670eb97d.chunk.js",
-    "static/js/743.403e1393.chunk.js": "/homework-react-25/static/js/743.403e1393.chunk.js",
+    "static/js/743.2fedd891.chunk.js": "/homework-react-25/static/js/743.2fedd891.chunk.js",
     "static/js/246.a5600605.chunk.js": "/homework-react-25/static/js/246.a5600605.chunk.js",
     "static/media/no-gender.png": "/homework-react-25/static/media/no-gender.e1585ffe5b6db4e962d9.png",
     "static/media/woman.png": "/homework-react-25/static/media/woman.09269225696216cdce98.png",
     "static/media/man.png": "/homework-react-25/static/media/man.7f27556de45ccfb9e352.png",
     "index.html": "/homework-react-25/index.html",
     "main.f855e6bc.css.map": "/homework-react-25/static/css/main.f855e6bc.css.map",
-    "main.19f38d4f.js.map": "/homework-react-25/static/js/main.19f38d4f.js.map",
+    "main.19046105.js.map": "/homework-react-25/static/js/main.19046105.js.map",
     "642.670eb97d.chunk.js.map": "/homework-react-25/static/js/642.670eb97d.chunk.js.map",
-    "743.403e1393.chunk.js.map": "/homework-react-25/static/js/743.403e1393.chunk.js.map",
+    "743.2fedd891.chunk.js.map": "/homework-react-25/static/js/743.2fedd891.chunk.js.map",
     "246.a5600605.chunk.js.map": "/homework-react-25/static/js/246.a5600605.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.19f38d4f.js"
+    "static/js/main.19046105.js"
   ]
 }
