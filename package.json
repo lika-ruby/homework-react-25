@@ -1,6 +1,7 @@
 {
   "name": "homework-react-25",
   "version": "0.1.0",
+  "homepage": "https://lika-ruby.github.io/homework-react-25",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
