@@ -14,29 +14,31 @@ export const SearchList = () => {
   const [movies, setMovies] = useState([]);
   const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get("query") || "";
+  const queryParam = searchParams.get("query") || "";
+  const [inputValue, setInputValue] = useState(queryParam);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!query.trim()) return;
-
-    const data = await getMoviesByFilter(query);
-    setMovies(data.results);
-
-    setSearchParams({ query });
-  };
-
-  const handleChange = (e) => setSearchParams({ query: e.target.value });
   useEffect(() => {
-    if (!query) return;
+    if (!queryParam) return;
 
     const fetchMovies = async () => {
-      const data = await getMoviesByFilter(query);
+      const data = await getMoviesByFilter(queryParam);
       setMovies(data.results);
     };
 
     fetchMovies();
-  }, [query]);
+  }, [queryParam]);
+
+  const handleChange = (e) => setInputValue(e.target.value);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const trimmed = inputValue.trim();
+    if (!trimmed) return;
+
+    const data = await getMoviesByFilter(trimmed);
+    setMovies(data.results);
+    setSearchParams({ query: trimmed });
+  };
 
   return (
     <SearchWrap>
@@ -45,7 +47,7 @@ export const SearchList = () => {
         <SearchForm onSubmit={handleSubmit}>
           <input
             type="text"
-            value={query}
+            value={inputValue}
             onChange={handleChange}
             placeholder="Movie name"
           />
